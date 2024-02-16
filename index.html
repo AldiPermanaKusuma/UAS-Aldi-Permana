@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A-Frame Simple Link Component - Basic</title>
+    <meta name="description" content="Basic example for Simple Link component."></meta>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="assets/dist/aframe-simple-link-component.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <a-scene environment="preset: osiris" cursor="rayOrigin: mouse">
+
+    <a-assets>
+	<img id="sp" src="./assets/spider/textures/zhizhuxiamcu_battlebody.001_baseColor.png">
+	<img id="sp2" src="./assets/spider/textures/zhizhuxiamcu_battlebody.001_metallicRoughness.png">
+    <img id="dc" src="./assets/cool/textures/hero_spiderman01_s08_01_specularf0.png">
+    <img id="dc1" src="./assets/cool/textures/hero_spiderman01_s08_02_baseColor.png">
+    <img id="dc2" src="./assets/cool/textures/hero_spiderman01_s08_02_metallicRoughness.png">
+    <img id="dc3" src="./assets/cool/textures/hero_spiderman01_s08_02_specularf0.png">
+    <img id="dc4" src="./assets/cool/textures/hero_spiderman01_s08_03_baseColor.png">
+    <img id="dc5" src="./assets/cool/textures/hero_spiderman01_s08_03_metallicRoughness.png">
+    <img id="dc6" src="./assets/cool/textures/hero_spiderman01_s08_03_specularf0.png">
+    <img id="dc7" src="./assets/cool/textures/hero_spiderman01_s08_wp_baseColor.png">
+    <img id="dc8" src="./assets/cool/textures/hero_spiderman01_s08_wp_metallicRoughness.png">
+    <img id="dc9" src="./assets/cool/textures/hero_spiderman01_s08_wp_specularf0.png">
+    <img id="dc10" src="./assets/cool/textures/manhole_baseColor.png">
+    <img id="dc11" src="./assets/cool/textures/SpiderMan_web02_baseColor.png">
+    <img id="dc12" src="./assets/cool/textures/hero_spiderman01_s08_01_baseColor.png">
+    <img id="dc13" src="./assets/cool/textures/hero_spiderman01_s08_01_metallicRoughness.png">
+    <img id="portal" src="./assets/magic/textures/rock_baseColor.png">
+    <img id="linkImage2" src="./assets/por.png">
+    <img id="linkImage" src="./assets/gg.png">
+    <img id="linkImage1" src="./assets/aa.png">
+    <img id="linkImage3" src="./assets/cop.png">
+    <img id="d" src="./assets/doctor/textures/DS_BODY_010_M_baseColor.png">
+    <img id="d2" src="./assets/doctor/textures/DS_CAPE_010_M_baseColor.png">
+    <img id="d3" src="./assets/doctor/textures/DS_EYESHADOW_M_baseColor.png">
+    <img id="d4" src="./assets/doctor/textures/DS_FACE_M_baseColor.png">
+    <img id="d5" src="./assets/doctor/textures/DS_GLOVE_010_M_baseColor.png">
+    <img id="d6" src="./assets/doctor/textures/DS_HAIR_WHITE_1_M_baseColor.png">
+    <img id="d7" src="./assets/doctor/textures/DS_PANT_010_M_baseColor.png">
+    <img id="d8" src="./assets/doctor/textures/DS_SHOES_010_M_baseColor.png">
+    </a-assets>
+
+    <a-entity gltf-model="./assets/cool/scene.gltf" animation-mixer="clip: Armature|Armature|hero_spiderman01_S08@idle|Base Layer" scale="1 1 1" position="-2 0.300 -2">
+        <a-entity
+            material="src: #dc"
+            gltf-part="body">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc1"
+            gltf-part="mon">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc2"
+            gltf-part="body3">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc3"
+            gltf-part="body4">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc4"
+            gltf-part="body5">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc5"
+            gltf-part="body6">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc6"
+            gltf-part="body7">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc7"
+            gltf-part="body8">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc8"
+            gltf-part="body9">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc9"
+            gltf-part="body10">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc10"
+            gltf-part="body11">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc11"
+            gltf-part="body12">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc12"
+            gltf-part="body13">
+        </a-entity>
+
+        <a-entity
+            material="src: #dc13"
+            gltf-part="body14">
+        </a-entity>
+        
+    </a-entity>
+
+    <a-entity gltf-model="./assets/iron/scene.gltf" scale="2 2 2" position="8 4 -20" rotation=" 0 0 0">
+    </a-entity>
+
+    <a-entity gltf-model="./assets/magic/scene.gltf" animation-mixer scale="0.004 0.004 0.004" position="-1 0.02 -5.2" rotation=" 0 90 0">
+        <a-entity
+            material="src: #portal"
+            gltf-part="portal">
+        </a-entity>
+    </a-entity>
+
+    <a-entity gltf-model="./assets/doctor/scene.gltf" scale="1.2 1.2 1.2" position="1 0.02 -2" rotation=" 0 -150 0"> 
+        <a-entity material="src: #d" gltf-part="body"></a-entity>
+        <a-entity material="src: #d2" gltf-part="body2"></a-entity>
+        <a-entity material="src: #d3" gltf-part="body3"></a-entity>
+        <a-entity material="src: #d4" gltf-part="body4"></a-entity>
+        <a-entity material="src: #d5" gltf-part="body5"></a-entity>
+        <a-entity material="src: #d6" gltf-part="body6"></a-entity>
+        <a-entity material="src: #d7" gltf-part="body7"></a-entity>
+        <a-entity material="src: #d8" gltf-part="body8"></a-entity>
+    </a-entity>    
+
+        <a-text position="-2.2 4.5 -5" value="Klik Portal to AR" color="white" scale="1.5 1.5 1.5"></a-text>
+
+        <a-entity position="8 4 -10" scale="1 1 1">
+            <a-image src="#linkImage2" width="5" height="5"></a-image>
+            <a-animation attribute="rotation" to="0 0 360" dur="2000" easing="linear" repeat="indefinite"></a-animation>
+        </a-entity>
+
+        <a-entity position="8 4 -10">
+            <a-image src="#linkImage" width="2" height="2"></a-image>
+        </a-entity>
+
+        <a-entity position="-1 1.7 -4.9">
+            <a-image src="#linkImage2" width="5" height="5"></a-image>
+            <a-animation attribute="rotation" to="0 0 360" dur="2000" easing="linear" repeat="indefinite"></a-animation>
+        </a-entity>
+        <a-entity position="0 0.02 -0.46" light="intensity:3;shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10;distance:0.01;decay:0;type:spot"></a-entity>
+        <a-entity position="-1 1.7 -4.8" simple-link="href: AR1.html; title: .; image: #linkImage3; radius:1.1; font: monoid" geometry="primitive:circle;radius:1.1" material="src:image:#linkImage3;color:#fff;shader:flat">
+            <a-entity text="align:center;font:monoid;value:.;width:4" position="0 1.5 0"></a-entity>
+        </a-entity>
+        <a-entity camera="" wasd-controls="" position="-1.85858 1.6 3.6517" rotation="0.34377467707849396 -20.741072183735813 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+    </a-scene>
+  </body>
+</html>
